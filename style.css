@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: white;
+    color: #333;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Desain paket hosting */
+.paket-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.paket {
+    flex: 1;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 13px;
+}
+
+.paket h4 {
+    color: white;
+    text-align: center;
+    padding: 12px 5px;
+    margin: 0;
+}
+
+.paket .harga {
+    text-align: center;
+    margin: 8px;
+}
+
+.paket p {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.free h4,
+.free button {
+    background-color: #1689e8;
+}
+
+.premium h4,
+.premium button {
+    background-color: #f28a00;
+}
+
+.profesional h4,
+.profesional button {
+    background-color: green;
+}
+
+.paket button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Desain tabel mahasiswa */
+.tabel-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+th {
+    background-color: #49358c;
+    color: white;
+    padding: 12px 8px;
+}
+
+td {
+    background-color: #fff0d0;
+    border: 1px solid #c9b98c;
+    padding: 12px 8px;
+}
+
+tbody tr:hover td {
+    background-color: #ffe3a5;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .paket-container {
+        flex-direction: column;
+    }
+
+    .paket {
+        width: 100%;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .judul {
+        font-size: 20px;
+    }
+}
