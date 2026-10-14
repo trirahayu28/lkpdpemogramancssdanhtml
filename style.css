@@ -1,126 +1,165 @@
-
 body {
     font-family: Arial, sans-serif;
-    margin: 30px;
+    margin: 20px;
     background-color: white;
-    color: #333;
 }
 
-.judul {
+h2 {
     text-align: center;
-    margin-bottom: 40px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
 h3 {
-    margin-top: 30px;
+    color: #3988b8;
+    margin-bottom: 20px;
 }
 
-/* Desain paket hosting */
-.paket-container {
+.hosting {
     display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .paket {
     flex: 1;
-    border: 1px solid #ddd;
-    text-align: left;
-    font-size: 13px;
+    min-width: 0;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 5px #dddddd;
+    box-sizing: border-box;
+}
+
+.free {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.premium {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.profesional {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
 }
 
 .paket h4 {
-    color: white;
-    text-align: center;
-    padding: 12px 5px;
-    margin: 0;
-}
-
-.paket .harga {
-    text-align: center;
-    margin: 8px;
+    font-size: 13px;
+    margin: 5px 0;
 }
 
 .paket p {
-    padding: 5px 10px;
-    border-bottom: 1px solid #eee;
+    font-size: 10px;
+    margin: 5px 0;
 }
 
-.free h4,
-.free button {
-    background-color: #1689e8;
+.isi {
+    padding: 7px;
 }
 
-.premium h4,
-.premium button {
-    background-color: #f28a00;
+.isi p {
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
 }
 
-.profesional h4,
-.profesional button {
+.tombol {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 8px 2px;
+    margin-top: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.biru {
+    background-color: #2196f3;
+}
+
+.orange {
+    background-color: #ff9800;
+}
+
+.hijau {
     background-color: green;
 }
 
-.paket button {
-    display: block;
-    width: calc(100% - 20px);
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Desain tabel mahasiswa */
-.tabel-responsive {
-    width: 100%;
-    overflow-x: auto;
-}
-
-table {
+#mahasiswa {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    font-family: Georgia, serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-th {
-    background-color: #49358c;
+#mahasiswa th {
+    background-color: #493b91;
     color: white;
-    padding: 12px 8px;
+    padding: 10px 4px;
 }
 
-td {
-    background-color: #fff0d0;
-    border: 1px solid #c9b98c;
-    padding: 12px 8px;
+#mahasiswa td {
+    background-color: #fff0d2;
+    border: 1px solid #8ca77c;
+    padding: 10px 4px;
 }
 
-tbody tr:hover td {
-    background-color: #ffe3a5;
+#mahasiswa tr:hover td {
+    background-color: #ffe2a8;
 }
 
-/* Tampilan HP */
-@media (max-width: 600px) {
-    body {
-        margin: 15px;
-    }
 
-    .paket-container {
-        flex-direction: column;
+    .hosting {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
     }
 
     .paket {
-        width: 100%;
+        flex: 1 1 0;
+        min-width: 0;
     }
 
-    table {
-        min-width: 650px;
+    .paket h4 {
+        font-size: 11px;
     }
 
-    .judul {
-        font-size: 20px;
+    .paket p,
+    .isi p {
+        font-size: 9px;
+        overflow-wrap: anywhere;
+    }
+
+    .isi {
+        padding: 5px;
+    }
+
+    .tombol {
+        font-size: 9px;
+        padding: 7px 1px;
+    }
+
+    #mahasiswa {
+        font-size: 9px;
+    }
+
+    #mahasiswa th,
+    #mahasiswa td {
+        padding: 6px 2px;
+        overflow-wrap: anywhere;
     }
 }
